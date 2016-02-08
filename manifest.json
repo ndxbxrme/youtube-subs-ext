@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube subscription helper",
+  "description": "Filters youtube subscriptions",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "https://www.youtube.com/feed/subscriptions"
+  ],
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/feed/subscriptions"],
+    "js": ["jquery.js", "filter.js"]
+  }]
+}
